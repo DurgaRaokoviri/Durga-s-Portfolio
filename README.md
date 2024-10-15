@@ -64,3 +64,29 @@ If you want to run the project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/username/portfolio.git
+
+2. Navigate into the project directory:
+   ```bash
+   cd portfolio
+   
+3. Open the index.html file in your browser to view the site locally.
+
+## Live Demo
+- Check out the live version of the portfolio here: Live Demo.
+
+## Screenshots
+
+### Home Section
+![Home Section](images/screenshots/Home_page.jpg)
+
+### About Section
+![Home Section](images/screenshots/About_page.jpg)
+
+### Contact Section
+![Home Section](images/screenshots/Contact_page.jpg)
+
+
+## Credits
+This portfolio was built by me, but I used a few external resources for help along the way:
+- **Icons**: Font Awesome
+- **Fonts**: Google Fonts
