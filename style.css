@@ -1,0 +1,304 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+body {
+  color: white;
+  background-color: #080808; /* Dark background for the entire page */
+}
+html {
+  scroll-behavior: smooth; /* Smooth scrolling when navigating sections */
+}
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-around; /* Space out elements within the navbar */
+  align-items: center;
+  height: 85px; /* Set height for the navbar */
+}
+/* Navigation Links */
+.right ul {
+  display: flex;
+  justify-content: space-between; /* Space between each navigation item */
+}
+.right ul li a {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+  font-size: 18px; /* Font size for navigation links */
+}
+.right ul li {
+  list-style: none; /* Remove default bullet points */
+  padding: 30px; /* Space around each navigation item */
+}
+.right ul a:hover {
+  color: red; /* Change color to red on hover */
+}
+.right {
+  position: relative;
+  right: -120px; /* Adjust position of the right side navigation */
+}
+.left {
+  position: relative;
+  left: -160px; /* Adjust position of the logo on the left */
+  font-family: "Bebas Neue", sans-serif; /* Font style for the logo */
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px; /* Font size for the logo text */
+}
+.left span {
+  color: red; /* Highlight "Durga's" in red */
+}
+/* Main Section */
+.main {
+  padding: 150px;
+  margin: 90px 18px;
+  font-size: 25px;
+  line-height: 67px; /* Space between lines */
+}
+.main p {
+  line-height: 32px;
+  font-size: 17px;
+  padding: 22px 0;
+}
+.main span {
+  color: rgb(228, 9, 9); /* Highlight certain text in red */
+}
+.main img {
+  width: 35%;
+  height: auto;
+  border-radius: 120px; /* Round image */
+  display: block;
+  padding: -7px 104px;
+  margin: -289px 662px; /* Position image */
+}
+/* About Section */
+.about {
+  padding: 140px 0;
+  color: rgb(233, 230, 230); /* Light gray text color */
+}
+.row {
+  padding: 60px 0;
+  border-radius: 25px; /* Round corners for rows */
+  display: flex;
+  justify-content: space-between; /* Space between flex items */
+  flex-wrap: wrap; /* Allow flex items to wrap on smaller screens */
+}
+.c1 {
+  flex-basis: 35%; /* Set width for column 1 */
+  max-width: 25%;
+  box-sizing: border-box;
+}
+.c1 img {
+  width: 96%;
+  height: 360px; /* Fixed height for profile image */
+  border-radius: 35px; /* Rounded profile image */
+  display: flex;
+  padding: -1px 195px;
+  margin: 0px 195px; /* Position profile image */
+}
+.ab {
+  color: red;
+  font-size: 40px; /* About section heading */
+}
+.c2 {
+  flex-basis: 60%; /* Set width for column 2 */
+  max-width: 58%;
+  box-sizing: border-box;
+  padding: -1 90px;
+  margin: 8px 45px;
+  font-size: 17px; /* Text size for about section */
+}
+/* Tab Navigation (Skills, Education, Hobbies) */
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f; /* Red underline effect */
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s; /* Smooth transition for underline */
+}
+.tab-links.active-link::after {
+  width: 50%; /* Underline active tab */
+}
+/* Tab Content */
+.tab-contents ul li {
+  list-style: none; /* Remove bullet points in tab lists */
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: #ff004f; /* Highlight important text in tab content */
+  font-size: 18px;
+}
+.tab-contents {
+  display: none; /* Hide tab contents by default */
+}
+.tab-contents.active-tab {
+  display: flex; /* Show active tab */
+}
+/* Projects Section */
+.ss, .pp {
+  font-size: 50px;
+  text-decoration-line: underline; /* Underline section titles */
+  color: red;
+  position: relative;
+  text-align: center;
+}
+/* Individual Project Display */
+.project {
+  color: white;
+  text-align: center;
+  font-size: 23px;
+  line-height: 60px;
+  margin-bottom: 300px;
+  margin-top: -44px;
+  display: flex;
+  justify-content: center;
+}
+.project-title {
+  color: rgb(237, 234, 234);
+  margin: 45px;
+  text-align: center;
+}
+.netflix {
+  border: 1px solid rgb(232, 26, 26); /* Border around project image */
+  margin: 12px;
+  height: auto;
+  width: 228px; /* Set fixed width for project images */
+}
+.project-discription {
+  color: white;
+}
+/* Contact Section */
+.title {
+  font-size: 50px;
+  text-decoration-line: underline;
+  color: red;
+  position: relative;
+  text-align: center;
+}
+.contact {
+  display: flex;
+}
+.contact-left {
+  position: relative;
+  flex-basis: 30%; /* Width for left contact column */
+  left: 72px;
+  top: 171px;
+  height: fit-content;
+}
+.contact-left p {
+  padding: 2px 2px;
+  font-size: 23px; /* Contact info font size */
+}
+.contact-left i {
+  color: #ff004f;
+  padding: 14px 11px;
+  font-size: 25px; /* Icon size */
+  transition: transform 0.5s;
+}
+.contact-left i:hover {
+  color: red;
+  transform: translateY(-5px); /* Slight hover effect */
+  font-size: 28px;
+  text-shadow: 0px 0px 20px red; /* Glowing effect on hover */
+}
+.cv {
+  display: inline-block;
+  border: 2px solid #ff004f; /* Style for "Download Resume" button */
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #ff004f; /* Red background */
+  padding: 15px 20px;
+  margin: 13px 10px;
+}
+.contact-right {
+  flex-basis: 70%; /* Width for right contact form */
+}
+/* Form Input and Textarea Styles */
+form input,
+form textarea {
+  position: relative;
+  top: 58px;
+  left: 93px;
+  width: 58%; /* Width for input fields */
+  border: 0;
+  outline: none;
+  background: #262626; /* Dark background for inputs */
+  padding: 17px 21px;
+  margin: 11px 147px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 8px; /* Rounded corners for inputs */
+}
+/* Submit Button */
+form button {
+  position: relative;
+  top: 61px;
+  left: 346px;
+  width: 35%;
+  border: 0;
+  outline: none;
+  background: red; /* Red background for submit button */
+  padding: 16px;
+  margin: 15px;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 50px; /* Rounded button */
+}
+.copyright {
+  position: relative;
+  color: rgb(176, 174, 174); /* Copyright text color */
+}
+nav .fa-solid {
+  display: none; /* Initially hide mobile navigation icons */
+}
+
+/* Responsive Styles */
+/* Tablet Layout */
+@media only screen and (max-width: 1200px) {
+  .main {
+    position: relative;
+    left: 25px;
+    padding: 53px 14px;
+    font-size: 20px; /* Adjust main text size */
+  }
+  .main img {
+    width: 50%; /* Adjust image size for tablets */
+    margin: 0 auto;
+  }
+  .c1,
+  .c2 {
+    flex-basis: 100%; /* Full width for columns on tablets */
+    max-width: 100%;
+    padding: 20px;
+  }
+  .c1 img {
+    margin: 0 auto; /* Center profile image */
+  }
+  nav {
+    flex-direction: column;
+    text-align: center; /* Center navigation on tablets */
+  }
+  .right ul {
+    flex-direction: column; /* Stack navigation items vertically */
+  }
+  .right ul li {
+    padding: 10px 0;
+  }
+}
